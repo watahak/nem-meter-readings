@@ -1,0 +1,50 @@
+[
+  {
+    "ID": "6b5014bb-7f2c-4ab2-bf56-ed314e34d7dc",
+    "NMI": "NEM1201009",
+    "Timestamp": "2005-03-01T00:00:00Z",
+    "Consumption": 31.444
+  },
+  {
+    "ID": "10bd9691-8cc0-4a28-ba08-52d05f76fc0d",
+    "NMI": "NEM1201009",
+    "Timestamp": "2005-03-02T00:00:00Z",
+    "Consumption": 32.239
+  },
+  {
+    "ID": "f459c4db-f450-4073-8889-a07005923d72",
+    "NMI": "NEM1201009",
+    "Timestamp": "2005-03-03T00:00:00Z",
+    "Consumption": 29.788
+  },
+  {
+    "ID": "17750bd9-a6a2-4a8f-b602-c0f2de346946",
+    "NMI": "NEM1201009",
+    "Timestamp": "2005-03-04T00:00:00Z",
+    "Consumption": 34.205
+  },
+  {
+    "ID": "0d548d8e-a24d-44ae-81b3-fdb22b836a90",
+    "NMI": "NEM1201010",
+    "Timestamp": "2005-03-01T00:00:00Z",
+    "Consumption": 33.189
+  },
+  {
+    "ID": "18cb4e58-49c3-434d-8458-f551e56c38c2",
+    "NMI": "NEM1201010",
+    "Timestamp": "2005-03-02T00:00:00Z",
+    "Consumption": 31.81
+  },
+  {
+    "ID": "fc1798b4-2a01-49e2-bb12-b16370af83d1",
+    "NMI": "NEM1201010",
+    "Timestamp": "2005-03-03T00:00:00Z",
+    "Consumption": 34.203
+  },
+  {
+    "ID": "29724cab-19f1-40b7-aefb-de13c3ce1669",
+    "NMI": "NEM1201010",
+    "Timestamp": "2005-03-04T00:00:00Z",
+    "Consumption": 31.353
+  }
+]

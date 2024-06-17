@@ -1,0 +1,44 @@
+info:
+  contact: {}
+paths:
+  /example/helloworld:
+    get:
+      consumes:
+      - application/json
+      description: do ping
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: ping example
+      tags:
+      - example
+  /meter-readings/upload:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Upload meter readings by uploading a CSV file
+      parameters:
+      - description: CSV file
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+        "400":
+          description: bad request
+          schema:
+            type: string
+      summary: Upload meter readings via CSV
+      tags:
+      - meter_readings
+swagger: "2.0"
