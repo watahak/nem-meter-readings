@@ -5,12 +5,18 @@ services:
     environment:
       DATABASE_HOST: ${DB_HOST}
       POSTGRES_USER: ${DB_USER}
+      PGUSER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_NAME}
     ports:
       - "5432:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -d ${DB_NAME} -U ${DB_USER}"]
+      interval: 3s
+      timeout: 3s
+      retries: 5
   goapp:
     build:
       context: .
@@ -20,7 +26,8 @@ services:
     environment:
       - GO_ENV=production
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
 volumes:
   postgres-data:
